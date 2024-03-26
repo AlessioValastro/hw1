@@ -26,6 +26,35 @@ button:hover {
   transform: scale(1.03);
 }
 
+.z-index1 {
+  z-index: 1;
+}
+.z-index2 {
+  z-index: 2;
+}
+.z-index3 {
+  z-index: 3;
+}
+.z-index4 {
+  z-index: 4;
+}
+.z-index5 {
+  z-index: 5;
+}
+.z-index6 {
+  z-index: 6;
+}
+.z-index7 {
+  z-index: 7;
+}
+
+.highligth {
+  background-color: #fceccc;
+  padding: 0 16px;
+  margin-left: -16px;
+  border-radius: 999px;
+}
+
 nav {
   height: 68px;
   display: flex;
@@ -76,6 +105,85 @@ nav {
 
   cursor: pointer;
 }
-.nav__section--menu a:hover {
-  background-color: ;
+
+.hero-section {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  max-width: 1200px;
+
+  margin: 64px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-align: center;
+}
+
+header h1 {
+  font-size: 5.25rem;
+  line-height: 1.05;
+
+  font-weight: 600;
+
+  margin: 0;
+}
+.underline__container {
+  position: relative;
+}
+.underline__container--line {
+  width: 230px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 12px;
+}
+
+header p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+header button {
+  font-size: 14px;
+  height: 44px;
+  padding: 0 24px;
+  margin-bottom: 12px;
+}
+
+.header__hero-img {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(236 236 236);
+  border-radius: 1rem;
+
+  margin-top: 55px;
+}
+.header__researchers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.header__researchers--carousell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__researchers--carousell img {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0 0 0 -12px;
+  border: 2px solid white;
+
+  border-radius: 100%;
 }
