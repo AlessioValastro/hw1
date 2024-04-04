@@ -10,19 +10,24 @@ questions.forEach((question) => {
 });
 
 const getStarted = document.querySelector("#getStarted");
-const loginInterface = document.querySelector(".get-started");
+const loginInterface = document.querySelector(".get-started__content");
 const loginContainer = document.querySelector(".get-started");
 
+loginInterface.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
 getStarted.addEventListener("click", () => {
-  loginInterface.classList.add("display-flex");
+  loginContainer.classList.add("display-flex");
   document.body.classList.add("overflow-hidden");
   updatePosition();
 
   loginContainer.addEventListener("click", () => {
-    loginInterface.classList.remove("display-flex");
+    loginContainer.classList.remove("display-flex");
     document.body.classList.remove("overflow-hidden");
     window.removeEventListener("scroll", updatePosition);
   });
+
   loginContainer.removeEventListener("click");
 });
 
