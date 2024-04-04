@@ -8,3 +8,26 @@ questions.forEach((question) => {
     answer.classList.toggle("faq__answer--open");
   });
 });
+
+const getStarted = document.querySelector("#getStarted");
+const loginInterface = document.querySelector(".get-started");
+const loginContainer = document.querySelector(".get-started");
+
+getStarted.addEventListener("click", () => {
+  loginInterface.classList.add("display-flex");
+  document.body.classList.add("overflow-hidden");
+  updatePosition();
+
+  loginContainer.addEventListener("click", () => {
+    loginInterface.classList.remove("display-flex");
+    document.body.classList.remove("overflow-hidden");
+    window.removeEventListener("scroll", updatePosition);
+  });
+  loginContainer.removeEventListener("click");
+});
+
+function updatePosition() {
+  const scrollTopPos = window.scrollY;
+  const distanzaDaTop = scrollTopPos + "px";
+  loginContainer.style.top = distanzaDaTop;
+}
