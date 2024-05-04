@@ -2,7 +2,6 @@
   --font-family: Inter, sans-serif;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -77,7 +76,7 @@ nav {
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 
   background-color: #ffffffa2;
   backdrop-filter: blur(16px);
@@ -375,6 +374,83 @@ header button {
 
 .grid__item--2 {
   grid-column: span 2;
+}
+
+.friends {
+  width: 100%;
+  max-width: 1200px;
+  padding: 128px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.friends h2 {
+  font-size: 3rem;
+  font-weight: 500;
+
+  margin: 0;
+}
+.friends p {
+  font-size: 1.25rem;
+
+  margin: 1rem 0 0 0;
+}
+.friends__box {
+  margin: 50px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.friends__box--inner-box {
+  height: 160px;
+  width: 300px;
+  padding: 20px;
+
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.friends__box--inner-box img {
+  height: 35px;
+
+  border-radius: 100%;
+}
+.friends__inner-box--intestazione {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 1rem;
+
+  position: relative;
+}
+.friends__inner-box--intestazione h3 {
+  font-size: 0.9rem;
+}
+.friends__inner-box--intestazione p {
+  margin: 0 0 0 5px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  font-size: 0.7rem;
+  opacity: 0.55;
+}
+.friends__inner-box--descrizione {
+  font-size: 1.1rem !important;
+  font-weight: 400;
+  line-height: 1.4rem;
+
+  margin-bottom: 10px;
+  padding: 0 10px;
+  opacity: 0.7;
 }
 
 .creator {
@@ -736,7 +812,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  
   #affiliate {
     display: none;
   }
@@ -803,51 +878,53 @@ footer {
     width: 40px;
     margin-top: 2rem;
   }
-  .creator h2{
+  .creator h2 {
     font-size: 2rem;
     font-weight: 500;
     padding: 0 2rem;
   }
-  .creator p{
+  .creator p {
     font-size: 1rem;
     padding: 0 3rem;
   }
-  .faq h2{
+  .faq h2 {
     font-size: 2rem;
     text-align: center;
   }
   .faq__container {
     width: 100%;
   }
-  .faq__container--row{
+  .faq__container--row {
     padding-right: 0;
   }
-  .faq__container--row h3{
+  .faq__container--row h3 {
     font-size: 1rem;
   }
-  .cta{
+  .cta {
     padding-top: 64px;
   }
-  .cta h2{
+  .cta h2 {
     font-size: 2.5rem;
   }
-  .cta p{
+  .cta p {
     font-size: 1rem;
   }
-  footer{
+  footer {
     flex-direction: column;
   }
-  .footer__logo{
+  .footer__logo {
     margin: 0;
   }
-  .footer__links{
+  .footer__links {
     display: flex;
     flex-direction: column;
     margin-left: 0;
   }
-  
-  .footer__company{
+
+  .footer__company {
     align-items: flex-start;
-    
+  }
+  .get-started__content {
+    flex-direction: column;
   }
 }
