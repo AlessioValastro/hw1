@@ -14,7 +14,6 @@ button {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  letter-spacing: 1px;
   background-color: black;
 
   height: 2.25rem;
@@ -24,9 +23,6 @@ button {
   border: none;
   cursor: pointer;
   transition: all 0.15s ease;
-}
-button:hover {
-  transform: scale(1.03);
 }
 
 .z-index1 {
@@ -107,7 +103,7 @@ nav {
 .nav__section--menu {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: .6rem;
 }
 
 .nav__section--menu a {
@@ -120,8 +116,7 @@ nav {
   align-items: center;
   justify-content: center;
 
-  line-height: 1.25rem;
-  padding: 0 10px;
+  padding: 7px 11px;
   border-radius: 0.5rem;
 
   cursor: pointer;
@@ -129,6 +124,20 @@ nav {
 
 .nav__section--menu a:hover {
   background-color: rgb(245 245 245);
+}
+
+#signup{
+ color: white !important;
+ font-weight: 500;
+}
+#signup:hover{
+  background: none !important;
+}
+
+.login-button {
+  background-color: rgb(244, 244, 244);
+  color: rgba(102, 102, 102, 0.9);
+  font-weight: 600;
 }
 
 .hero-section {
@@ -415,6 +424,7 @@ header button {
 }
 .friends__box--inner-box img {
   height: 35px;
+  width: 35px;
 
   border-radius: 100%;
 }
@@ -622,185 +632,6 @@ footer {
 .footer__company p {
   margin: 0;
   color: rgb(172 172 172);
-}
-
-.get-started {
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-
-  background-color: #ffffffa2;
-  backdrop-filter: blur(16px);
-  display: none;
-}
-.get-started__content {
-  background-color: white;
-  max-width: 800px;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-
-  border: 1px solid rgba(123, 122, 122, 0.2);
-
-  border-radius: 1rem;
-  padding: 0.5rem;
-}
-.get-started__content--left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.get-started__left--intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 15px;
-}
-.get-started__left--intro h2 {
-  margin: 1rem 0 0.4rem 0;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-.get-started__left--intro p {
-  margin: 0;
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: rgb(123, 122, 122);
-}
-.get-started__left--login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 1.5rem 0;
-  width: 100%;
-}
-.get-started__left--login input {
-  width: 85%;
-  height: 30px;
-  border-radius: 2rem;
-
-  padding: 5px 20px;
-  outline: 1px solid rgba(123, 122, 122, 0.4);
-  border: none;
-}
-.get-started__login--more {
-  width: 90%;
-  margin-top: 6px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.get-started__login--more label {
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: rgb(123, 122, 122);
-  display: flex;
-  align-items: center;
-}
-.get-started__login--more input {
-  height: 15px;
-  width: 15px;
-  outline: none;
-  border-radius: 0;
-
-  padding: 0;
-  margin: 0 8px 0 0;
-}
-.get-started__login--more a {
-  color: black;
-  font-size: 0.85rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-.get-started__left--divisore {
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-}
-.get-started__divisore--line {
-  border-top: 1px solid rgba(123, 122, 122, 0.3);
-  flex-grow: 1;
-  margin: 0 9px;
-}
-.get-started__left--divisore label {
-  font-size: 0.7rem;
-  color: rgba(123, 122, 122, 0.9);
-}
-
-.get-started__left--continue {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 1.5rem 0;
-  width: 100%;
-}
-.get-started__left--continue button {
-  width: 95%;
-  height: 40px;
-  border-radius: 2rem;
-
-  font-weight: 500;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.get-started__left--continue img {
-  height: 16px;
-
-  margin-bottom: 3px;
-}
-.apple-logo {
-  filter: invert(1);
-}
-.get-started__left--continue label {
-  font-size: 0.8rem;
-  color: rgb(123, 122, 122);
-
-  margin-top: 10px;
-}
-.get-started__left--continue a {
-  color: #000;
-}
-.get-started__content--right {
-  color: white;
-  background-color: black;
-  width: 42%;
-
-  border-radius: 1rem;
-  padding: 1rem 3rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-
-  text-align: center;
-}
-.get-started__content--right h2 {
-  margin: 1rem 0 0.4rem 0;
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-.get-started__content--right img {
-  width: 60%;
-  border-radius: 1rem;
 }
 
 .display-flex {

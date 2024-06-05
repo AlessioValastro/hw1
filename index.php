@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Unriddle | Faster research</title>
+    <link rel="icon" href="public/vector4.svg">
+    <link rel="stylesheet" href="index.css" />
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,9 +24,9 @@
         </div>
         <div class="nav__section--menu">
           <a href="">Prising</a>
-          <a href="">Blog</a>
           <a href="" id="affiliate">Affiliate</a>
-          <button id="getStarted">Get started</button>
+          <button id="login" class="login-button"><a href="log-in.php">Log in</a></button>
+          <button ><a href="sign-up.php" id="signup">Sign up</a></button>
         </div>
       </section>
     </nav>
@@ -151,7 +152,6 @@
               click using our browser extension.
             </p>
             <img src="public/chrome.png" alt="" class="mobile-hidden"/>
-            <img src="public/chrome-mobile.png" alt="" >
             <div class="explore__item--shadow"></div>
           </div>
           <div class="explore__grid--item grid__item--2">
@@ -326,60 +326,6 @@
           </div>
         </div>
       </footer>
-
-      <section class="get-started">
-        <div class="get-started__content">
-          <div class="get-started__content--left">
-            <div class="get-started__left--intro">
-              <img src="public/vector4.svg" alt="unriddle-logo" />
-              <h2>Welcome Back</h2>
-              <p>Are you ready for Unriddle.ai?</p>
-            </div>
-
-            <div class="get-started__left--login">
-              <input type="text" placeholder="Your email" />
-              <input type="password" placeholder="Your password" />
-              <div class="get-started__login--more">
-                <label for="remember">
-                  <input type="radio" />
-                  Remember me
-                </label>
-                <a href="">Forget Password?</a>
-              </div>
-            </div>
-
-            <div class="get-started__left--divisore">
-              <div class="get-started__divisore--line"></div>
-              <label for="or">OR</label>
-              <div class="get-started__divisore--line"></div>
-            </div>
-
-            <div class="get-started__left--continue">
-              <button>
-                <img
-                  src="public/google-icon-logo-svgrepo-com.svg"
-                  alt="google-logo"
-                />Continue with Google
-              </button>
-              <button>
-                <img
-                  src="public/apple-logo-svgrepo-com.svg"
-                  alt="apple-logo"
-                  class="apple-logo"
-                />Continue with Apple
-              </button>
-              <label for="sign-up"
-                >Do not have an account? <a href="">Sign up</a></label
-              >
-            </div>
-          </div>
-          <div class="get-started__content--right">
-            <h2>Log in with QR Code</h2>
-            <img src="public/qr-code.png" alt="qr-code" />
-            <p>Scan this with the Unriddle App to log instantly</p>
-          </div>
-        </div>
-      </section>
     </main>
   </body>
 </html>
